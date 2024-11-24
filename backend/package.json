@@ -2,11 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend for simple calculator app",
-  "main": "app.mjs",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.mjs"
+    "start": "node app.js"
   },
   "author": "Nick Katzenberger, Brandon Penman, Carl Guillaume, Akram Amer",
   "license": "ISC",
