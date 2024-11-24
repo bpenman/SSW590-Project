@@ -1,11 +1,7 @@
-// Import the express router as shown in the lecture code
-// Note: please do not forget to export the router!
-
-const express =  require('express');
+const express = require('express');
 const algebra = require('algebra.js');
-const path = require ('path');
+const path = require('path');
 const { Equation, Expression } = algebra;
-
 const router = express.Router();
 router
   .route('/')
