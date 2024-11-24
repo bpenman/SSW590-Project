@@ -3,6 +3,7 @@
 
 const express =  require('express');
 const algebra = require('algebra.js');
+const path = require ('path');
 const { Equation, Expression } = algebra;
 
 const router = express.Router();
