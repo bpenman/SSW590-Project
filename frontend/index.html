@@ -8,24 +8,11 @@
 </head>
 
 <body>
-    <!-- EXAMPLE FORM FOR CALLING ENDPOINT
-    <form method="POST" action="/foo-route">
-        <input type="text" id="bar" name="bar" />
-        <button type="submit">Send</button>
-     </form> \\This can also be removed
-     -->
 
     <h1>Simple Calculator</h1>
     <form id="calc-form" action = "http://localhost:3000/?", method = "POST">
         <input type="text" id="num1" name="num1" placeholder="Enter Equation">
-<!-- 
-        <input type="radio" id="add" name="operator" value="add"> <label for="add">Add</label>
-        <input type="radio" id="subtract" name="operator" value="subtract"> <label for="subtract">Subtract</label>
-        <input type="radio" id="multiply" name="operator" value="multiply"> <label for="multiply">Multiply</label>
-        <input type="radio" id="divide" name="operator" value="divide"> <label for="divide">Divide</label>
 
-        <input type="number" id="num2" name="num2"> Can be removed
--->
         <button type="submit">Submit</button>
     </form>
     <div class="keypad">
@@ -84,7 +71,7 @@
             try {
                 // Send a GET request to the endpoint with form data as query parameters, should look like this for 2+2
                     //http://localhost:3000/?num1=2&operator=add&num2=2
-                const response = await fetch('http://localhost:3000/?' + queryString)
+                const response = await fetch('/calculator/?' + queryString)
              
                 const data = await response.json();  // Parse JSON response
                 
