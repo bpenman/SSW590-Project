@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node app.js"
   },
   "author": "Nick Katzenberger, Brandon Penman, Carl Guillaume, Akram Amer",
@@ -14,6 +14,7 @@
     "algebra.js": "^0.2.6",
     "cors": "^2.8.5",
     "express": "^4.21.1",
+    "jest": "^29.7.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
