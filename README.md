@@ -1,3 +1,4 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/bpenman/SSW590-Project/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/bpenman/SSW590-Project/tree/main)
 # SSW590-Project
 
 

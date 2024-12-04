@@ -1,0 +1,22 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.2
+
+jobs:
+  test:
+    executor:
+      name: node/default
+    steps:
+      - checkout # Pull code from the repository
+      - run:
+          name: Change Directory
+          command: cd backend && npm install
+      - run:
+          name: Run Jest Tests
+          command: cd backend && npm test
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
