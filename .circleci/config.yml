@@ -1,9 +1,9 @@
 version: 2.1
-
+orbs:
+  # See the Node orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
+  node: circleci/node@5.2
 jobs:
   test:
-    docker:
-      - image: circleci/node:18 # Use a Node.js Docker image (adjust version as needed)
     steps:
       - run: 
           name: cd into backend
