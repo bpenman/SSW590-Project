@@ -16,7 +16,7 @@
      -->
 
     <h1>Simple Calculator</h1>
-    <form id="calc-form">
+    <form id="calc-form" action = "http://localhost:3000/?", method = "POST">
         <input type="text" id="num1" name="num1" placeholder="Enter Equation">
 <!-- 
         <input type="radio" id="add" name="operator" value="add"> <label for="add">Add</label>
@@ -84,7 +84,7 @@
             try {
                 // Send a GET request to the endpoint with form data as query parameters, should look like this for 2+2
                     //http://localhost:3000/?num1=2&operator=add&num2=2
-                const response = await fetch('/calculator/?' + queryString)
+                const response = await fetch('http://localhost:3000/?' + queryString)
              
                 const data = await response.json();  // Parse JSON response
                 
