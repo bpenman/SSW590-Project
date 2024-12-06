@@ -1,0 +1,92 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-12-05 18:16 Eastern Standard Time
+NSE: Loaded 157 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:16
+Completed NSE at 18:16, 0.00s elapsed
+Initiating NSE at 18:16
+Completed NSE at 18:16, 0.00s elapsed
+Initiating NSE at 18:16
+Completed NSE at 18:16, 0.00s elapsed
+Initiating Ping Scan at 18:16
+Scanning 13.86.93.180 [4 ports]
+Completed Ping Scan at 18:16, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:16
+Completed Parallel DNS resolution of 1 host. at 18:16, 1.27s elapsed
+Initiating SYN Stealth Scan at 18:16
+Scanning 13.86.93.180 [1000 ports]
+Discovered open port 22/tcp on 13.86.93.180
+Discovered open port 3000/tcp on 13.86.93.180
+Completed SYN Stealth Scan at 18:17, 6.03s elapsed (1000 total ports)
+Initiating Service scan at 18:17
+Scanning 2 services on 13.86.93.180
+Completed Service scan at 18:17, 11.24s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 13.86.93.180
+Retrying OS detection (try #2) against 13.86.93.180
+Initiating Traceroute at 18:17
+Completed Traceroute at 18:17, 6.11s elapsed
+Initiating Parallel DNS resolution of 14 hosts. at 18:17
+Completed Parallel DNS resolution of 14 hosts. at 18:17, 2.51s elapsed
+NSE: Script scanning 13.86.93.180.
+Initiating NSE at 18:17
+Completed NSE at 18:17, 5.15s elapsed
+Initiating NSE at 18:17
+Completed NSE at 18:17, 0.28s elapsed
+Initiating NSE at 18:17
+Completed NSE at 18:17, 0.00s elapsed
+Nmap scan report for 13.86.93.180
+Host is up (0.061s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE  SERVICE VERSION
+22/tcp   open   ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 dd:21:9a:1e:1d:56:5a:2a:42:10:16:4b:4d:be:61:fb (RSA)
+|   256 02:3e:a7:d3:05:f1:ef:8e:8f:82:4f:5d:25:a8:b8:7a (ECDSA)
+|_  256 7f:65:33:89:ed:69:1a:6f:45:32:ab:7b:d9:0a:29:3f (ED25519)
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp open   http    Node.js Express framework
+|_http-title: Calculator
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-cors: HEAD GET POST PUT DELETE PATCH
+Device type: general purpose|firewall
+Running (JUST GUESSING): Linux 4.X|5.X|6.X|2.6.X (94%), IPFire 2.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:ipfire:ipfire:2.27 cpe:/o:linux:linux_kernel:5.15 cpe:/o:linux:linux_kernel:6.1 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 4.19 - 5.15 (94%), Linux 4.15 (89%), IPFire 2.27 (Linux 5.15 - 6.1) (87%), Linux 2.6.32 (86%), Linux 5.4 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 13.476 days (since Fri Nov 22 06:52:47 2024)
+Network Distance: 26 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   6.00 ms  Docsis-Gateway (192.168.1.1)
+2   23.00 ms 10.240.165.165
+3   16.00 ms ubr206-ge3-0-2.cmts.smfrct.cv.net (67.59.243.58)
+4   26.00 ms dstswr2-ge3-16.rh.wlwknj.cv.net (67.83.250.134)
+5   28.00 ms 67.59.251.64
+6   23.00 ms 64.15.3.140
+7   ...
+8   21.00 ms ae28-0.ear05.ewr30.ntwk.msn.net (104.44.231.64)
+9   51.00 ms be-25-0.ibr02.ewr30.ntwk.msn.net (104.44.33.213)
+10  53.00 ms be-8-0.ibr01.cle30.ntwk.msn.net (104.44.17.201)
+11  51.00 ms be-11-0.ibr02.ch4.ntwk.msn.net (104.44.29.45)
+12  56.00 ms 104.44.31.194
+13  56.00 ms 51.10.9.232
+14  53.00 ms 104.44.54.252
+15  ... 25
+26  57.00 ms 13.86.93.180
+
+NSE: Script Post-scanning.
+Initiating NSE at 18:17
+Completed NSE at 18:17, 0.00s elapsed
+Initiating NSE at 18:17
+Completed NSE at 18:17, 0.00s elapsed
+Initiating NSE at 18:17
+Completed NSE at 18:17, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 40.44 seconds
+           Raw packets sent: 2137 (99.044KB) | Rcvd: 106 (6.984KB)
